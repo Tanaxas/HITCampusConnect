@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Add the arrow button and the create account button to the HTML -->
+            <div class="corner-btn-container">
+                <button class="arrow-btn"><i class="fas fa-user"></i></button>
+                <button class="create-account-btn" onclick="location.href='createAccount.html'" style="display: none;">Create Account</button>
+            </div>
+        
+            <a href="###" class="logo">Campus Connect</a>
+            <ul class="nav-links">
+                <li><a href="home.html" class="nav-link active"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="explore.html" class="nav-link"><i class="fas fa-compass"></i> Explore</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="events.html" class="nav-link"><i class="fas fa-calendar-alt"></i>Events</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+            
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <button class="scroll-btn"><i class="fas fa-angle-down"></i></button>
+            <!--<div class="auth-btns">
+                <button class="btn sign-up">Sign Up</button>
+                <button class="btn sign-in">Sign In</button>
+            </div>-->
+        </div>
+    </nav>
+
+    <!-- Homepage Content -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Campus Connect</h1>
+            <p>A platform for students, by students.</p>
+            <button class="btn get-started">Get Started</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>What We Offer</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Community Building</h3>
+                    <p>Connect with fellow students and build meaningful relationships.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-book"></i>
+                    <h3>Academic Resources</h3>
+                    <p>Access a wealth of academic resources, including study guides and tutorials.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-calendar"></i>
+                    <h3>Event Planning</h3>
+                    <p>Plan and attend events, from study sessions to social gatherings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Campus Connect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

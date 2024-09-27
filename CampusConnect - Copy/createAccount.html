@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateAccount</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Create Account Form -->
+    <div class="create-account-form">
+        <h2>Create Account</h2>
+        <form id="create-account-form">
+            <label for="service-provider-name">Service Provider Name:</label>
+            <input type="text" id="service-provider-name" name="service-provider-name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="service-type">Service Type:</label>
+            <select id="service-type" name="service-type">
+                <option value="">Select Service Type</option>
+                <option value="electrician">Electrician</option>
+                <option value="plumber">Plumber</option>
+                <option value="carpenter">Carpenter</option>
+                <!-- Add more options as needed -->
+            </select><br><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea><br><br>
+
+            <label for="profile-picture">Profile Picture:</label>
+            <input type="file" id="profile-picture" name="profile-picture" accept="image/*"><br><br>
+
+            <label for="service-picture-1">Service Picture 1:</label>
+            <input type="file" id="service-picture-1" name="service-picture-1" accept="image/*"><br><br>
+
+            <label for="service-picture-2">Service Picture 2:</label>
+            <input type="file" id="service-picture-2" name="service-picture-2" accept="image/*"><br><br>
+
+            <input type="submit" value="Create Account">
+        </form>
+    </div>
+
+    </body>
+</html>

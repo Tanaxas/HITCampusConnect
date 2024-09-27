@@ -1,0 +1,517 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+footer{
+  background-color: #666;
+}
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* ensure it stays on top of other elements */
+  background-color: #333; /* add a background color to maintain visibility */
+  padding: 3px; /* maintain the original padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap:5rem;
+}
+
+.nav-links li {
+  margin-right: 0;
+  display:grid;
+  place-content: center;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+.nav-links .active {
+  font-weight: bold;
+  color:#4CAF50;
+}
+.nav-link i {
+  margin-right: 10px; /* Add some space between the icon and the text */
+  font-size: 18px; /* Make the icon slightly larger */
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.auth-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-btns button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-btns button:hover {
+  background-color: #444;
+}
+
+/* Homepage Styles */
+
+.hero {
+  background-image: linear-gradient(to bottom, #333, #444);
+  background-size: 100% 300px;
+  background-position: 0% 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.get-started {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-color:white;
+}
+
+.get-started:hover {
+  background-color: #444;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature {
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* About Page Styles */
+
+.about {
+  padding: 40px;
+}
+
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Contact Page Styles */
+
+.contact {
+  padding: 40px;
+}
+
+.contact h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+}
+
+.contact button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact button[type="submit"]:hover {
+  background-color: #444;
+}
+
+/* Events Page Styles */
+
+.events {
+  padding: 40px;
+}
+
+.events h1 {
+  font-size: 36px;}
+  /* Resources Page Styles */
+
+.resources {
+    background-color: #f7f7f7;
+    padding: 40px;
+  }
+  
+  .resource-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .resource-list li {
+    margin-bottom: 20px;
+  }
+  
+  .resource-list h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .resource-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .resource-list li ul li {
+    margin-bottom: 10px;
+  }
+  
+  .resource-list a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .resource-list a:hover {
+    color: #23527c;
+  }
+  .team-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-list li {
+    margin: 20px;
+    text-align: center;
+}
+
+.team-list img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-list h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.team-list p {
+    font-size: 14px;
+    color: #666;
+}
+/* Add styles to the button */
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #666; /* Green background */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure the button is on top of other elements */
+}
+
+.scroll-btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Add animation to the button */
+.scroll-btn {
+  transition: transform 0.5s ease-in-out;
+}
+
+.scroll-btn:active {
+  transform: translateY(5px);
+}
+.space{
+  height: 150px;
+}
+/* Add styles to the corner button container */
+.corner-btn-container {
+  position: fixed;
+  top: 5px;
+  left: 10px;
+  z-index: 1;
+}
+
+/* Add styles to the arrow button */
+.arrow-btn {
+  background-color: #666;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.arrow-btn:hover {
+  background-color: #3e8e41;
+}
+.arrow-btn:active, .arrow-btn:focus{
+  background-color: #3e8e41;
+}
+/* Add styles to the create account button */
+.create-account-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* hide the button by default */
+}
+
+.create-account-btn:hover {
+  background-color: #3e8e41;
+}/* Style the Create Account form */
+.create-account-form {
+  background-color: #f9f9f9; /* Light gray */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-account-form h2 {
+  margin-top: 0;
+}
+
+.create-account-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.create-account-form input[type="text"], .create-account-form input[type="email"], .create-account-form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.create-account-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.create-account-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.create-account-form input[type="submit"] {
+  background-color: #4CAF50; /* Green */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-account-form input[type="submit"]:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+.btn.submit {
+  background-color: #4CAF50; /* Green background */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Add a slight curve to the button */
+}
+
+.btn.submit:hover {
+  background-color: #3e8e41; /* Darker green background on hover */
+}
+
+.btn.submit i {
+  margin-right: 10px; /* Add some space between the icon and the text */
+  font-size: 18px; /* Make the icon slightly larger */
+}
+/*Styles for "Explore" page*/
+.explore-feed {
+  padding: 20px;
+}
+
+.explore-feed .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.explore-feed h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service {
+  margin: 20px;
+  width: calc(33.33% - 20px);
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-provider {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.service-provider img {
+  width: 20% !important;
+  height: 20% !important;
+  border-radius: 50% !important;
+  margin-right: 10px;
+}
+
+.service-provider a {
+  font-weight: bold;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.service-provider a:hover {
+  color: #23527c;
+}
+
+.service img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.service p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.service > p > a{
+  text-decoration:none;
+}

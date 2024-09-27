@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Created</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Account Created Successfully!</h2>
+    <p>Here are the details you entered:</p>
+    <ul>
+        <li>Service Provider Name: <span id="service-provider-name"></span></li>
+        <li>Email: <span id="email"></span></li>
+        <li>Phone: <span id="phone"></span></li>
+        <li>Service Type: <span id="service-type"></span></li>
+        <li>Description: <span id="description"></span></li>
+        <li>Profile Picture: <img src="" id="profile-picture" alt="Profile Picture"></li>
+        <li>Service Picture 1: <img src="" id="service-picture-1" alt="Service Picture 1"></li>
+        <li>Service Picture 2: <img src="" id="service-picture-2" alt="Service Picture 2"></li>
+    </ul>
+
+    <script>
+        const serviceProviderName = localStorage.getItem('serviceProviderName');
+        const email = localStorage.getItem('email');
+        const phone = localStorage.getItem('phone');
+        const serviceType = localStorage.getItem('serviceType');
+        const description = localStorage.getItem('description');
+        const profilePicture = localStorage.getItem('profilePicture');
+        const servicePicture1 = localStorage.getItem('servicePicture1');
+        const servicePicture2 = localStorage.getItem('servicePicture2');
+
+        document.getElementById('service-provider-name').textContent = serviceProviderName;
+        document.getElementById('email').textContent = email;
+        document.getElementById('phone').textContent = phone;
+        document.getElementById('service-type').textContent = serviceType;
+        document.getElementById('description').textContent = description;
+        document.getElementById('profile-picture').src = profilePicture;
+        document.getElementById('service-picture-1').src = servicePicture1;
+        document.getElementById('service-picture-2').src = servicePicture2;
+    </script>
+</body>
+</html>
